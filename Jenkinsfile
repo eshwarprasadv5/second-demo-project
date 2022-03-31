@@ -30,7 +30,7 @@ pipeline{
                     }
                     steps{
                         sshagent(['maven-cd-key']) {
-                        sh "scp -o StrictHostKeyChecking=no target/second-demo-project-1.0-SNAPSHOT.jar $USER_NAME@$SERVER_IP:/home/ec2-user" 
+                        sh "scp -o StrictHostKeyChecking=no target/second-demo-project-2.0-SNAPSHOT.jar $USER_NAME@$SERVER_IP:/home/ec2-user" 
                          }
                     }
                 }    
