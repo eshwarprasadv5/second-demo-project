@@ -13,7 +13,7 @@ pipeline{
     stages{
         stage('CheckOut'){
             steps{
-                git 'https://github.com/eshwarprasadv5/second-demo-project.git'
+               git branch: 'branch1', url: 'https://github.com/eshwarprasadv5/second-demo-project.git'
             }
         }
         stage('Build'){
